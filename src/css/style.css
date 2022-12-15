@@ -1,0 +1,9 @@
+@import "./filter-page.css" screen;
+
+body {
+    background: rgb(0, 0, 0);
+  }
+
+.header__title {
+  color: orange;
+}

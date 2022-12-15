@@ -1,0 +1,14 @@
+@media screen {
+.footer{
+    background: #fff;
+}
+}
+body {
+    background: rgb(0, 0, 0);
+  }
+
+.header__title {
+  color: orange;
+}
+
+/*# sourceMappingURL=main.css.map*/

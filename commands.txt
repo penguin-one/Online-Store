@@ -1,0 +1,49 @@
+npm install -g typescript (or npm install typescript -D -- установка локально в качестве dev-зависимости)
+tsc --init -- для создания tsconfig.json
+npm init -- для создания package.json
+npm install webpack webpack-cli ts-loader -D (or --save-dev)
+
+  webpack-cli -- для запуска команд webpack в командной строке
+  ts-loader -- для того, чтобы webpack понимал, как компилировать ts в js
+  node_modules -- просто папка, где находятся модули. Не требует редактирования
+  package-lock.json -- также не требует редактирования
+
+npm run build -- после создания необходимых папок и файлов
+npm install webpack-dev-server -D
+npm run serve
+
+
+npm init
+npm i webpack --save-dev
+npm run - запуск скриптов из scripts package.json
+npm i webpack-cli --save-dev
+
+  --save-dev (-D) нужен для занесения установленных модулей в devDependencies, если потом package.json передать на другой компьютер, то не нужно будет устаналивать модули заново, достаточно будет написать npm i и модули установятся по очереди сами
+  
+  ECMAScript 2015 (es6)
+  Работа с модулями:
+  export default [имя экспортируемой функции, напр. avg];
+  import avg from './[имя файла, в котом лежит avg]';
+
+npm i jquery --save
+
+  import $ from 'jquery';
+  --save ставится для занесения установленных модулей не в devDependencies, а dependencies
+  в devDependencies - модули, которые нужны в процессе сборки
+  в dependencies - модули, которые нужны в итоговом коде
+  в Gulp нет экспорта/импорта модулей
+  "build": "webpack --mode production (development)" - первый режим - для макс сжатия файла, второй для быстрой разработки
+
+npm i webpack-dev-server --save-dev
+  
+  babel - переводит новые стандарты js в старые для корректной работы в старых браузерах
+  //mode: 'development',
+  //devtool: 'eval-source-map',
+
+npm i style-loader css-loader --save-dev
+npm i mini-css-extract-plugin --save-dev
+npm i html-webpack-plugin --save-dev
+
+webpack.config.js, package.json and npm i - для развертывания сборки
+
+  npm uninstall -D <package-name>
