@@ -1,23 +1,22 @@
 {
-  "name": "webpack-env",
+  "name": "online-store",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "serve": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penguin-one/webpack-env.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/penguin-one/webpack-env/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/penguin-one/webpack-env#readme",
+  "homepage": "",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "mini-css-extract-plugin": "^2.7.2",
